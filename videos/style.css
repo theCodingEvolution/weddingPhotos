@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  
+  font-family: "Poppins",sans-serif;
+}
+
+
+.bg-img {
+  /* The image used */
+  background-image: url("photos/nav\ pic.jpg");
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #000000;
+  color: rgb(203, 246, 206);
+  font-weight: 500;
+  display: flex;
+}
+section{
+  position: relative;
+  width:100%;
+  height:100vh;
+  background: #333;
+  z-index: -1;
+}
+section h2
+{
+  position:relative;
+  width:100%;
+  height: 100vh;
+  text-align:center;
+  line-height:100vh;
+  font-size: 10vw;
+  color:#fff;
+  font-weight:700;
+}
+.banner{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+}
+.active{
+  background-color: rgb(57, 188, 25);
+}
+.banner .blocks
+{
+  position:relative;
+  display:block;
+  width: 2.3vw;
+  height:8vw;
+  animation: animate 0.75s ease-in-out forwards;
+}
+.banner .blocks:nth-child(even)
+{
+  animation:animate 2s ease-in-out forwards;
+}
+.banner .blocks:nth-child(7n+3)
+{
+  animation:animate 3.5s ease-in-out forwards;
+}
+.banner .blocks:nth-child(7n+7)
+{
+  animation:animate 2.5s ease-in-out forwards;
+}
+@keyframes animate
+{
+  0%
+  {
+    opacity: 0;
+    top:1000px;
+  }
+  50%
+  {
+    opacity: 1;
+    background:url('photos/DSC_0375.JPG');
+    background-position: center;
+    background-attachment: fixed;
+   
+  }
+  100%
+  {
+    opacity:1;
+   top:0px;
+    background:url('photos/DSC_0375.JPG');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
+}
