@@ -102,7 +102,7 @@ section h2
   50%
   {
     opacity: 1;
-    background:url('photos/DSC_0375.JPG');
+    background:url('/photos/DSC_0375.JPG');
     background-position: center;
     background-attachment: fixed;
    
@@ -111,7 +111,7 @@ section h2
   {
     opacity:1;
     top:0px;
-    background:url('photos/DSC_0375.JPG');
+    background:url('/photos/DSC_0375.JPG');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
