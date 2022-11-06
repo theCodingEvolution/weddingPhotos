@@ -1,137 +1,87 @@
-@import url("https://fonts.googleapis.com/css?family=Audiowide");
-*{
-  margin: 0;
-  
-  font-family: "Poppins",sans-serif;
-}
 
 
-.bg-img {
-  /* The image used */
-  background-image: url("photos/nav\ pic.jpg");
-  background-size: cover;
-  
-  /* Needed to position the navbar */
-  position: relative;
-}
+a:hover{
+  background-color: rgba(31, 173, 212, 0.227);
 
-/* Position the navbar container inside the image */
-.container {
-  position: absolute;
-  margin: 20px;
-  width: auto;
-}
-
-/* The navbar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Navbar links */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #000000;
-  color: rgb(203, 246, 206);
+  font-size: 20px;
   font-weight: 500;
-  display: flex;
+  
+  font-family: "Ubuntu";
+  color:bisque;
 }
-section{
-  position: relative;
-  width:100%;
-  height:100vh;
-  background: #333;
-  z-index: -1;
+a{
+  font-family: "Ubuntu";
+  font-size:25px;
+ 
 }
-section h2
-{
-  position:relative;
-  width:100%;
+.w-100 {
+  width: 75% !important;
   height: 100vh;
-  text-align:center;
-  line-height:100vh;
-  font-size: 10vw;
-  color:#fff;
-  font-weight:700;
 }
-.banner{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height: 100%;
-  overflow:hidden;
-  display:flex;
-  flex-wrap: wrap;
+.carousel-item{
+  margin: 0% 5% 5%;
+  
+ 
 }
-.banner .blocks
-{
-  position:relative;
-  display:block;
-  width: 5%;
-  height:5vw;
-  animation: animate 0.75s ease-in-out forwards;
-}
-.banner .blocks:nth-child(even)
-{
-  animation:animate 2s ease-in-out forwards;
-}
-.banner .blocks:nth-child(7n+3)
-{
-  animation:animate 3.5s ease-in-out forwards;
-}
-.banner .blocks:nth-child(7n+7)
-{
-  animation:animate 2.5s ease-in-out forwards;
-}
-@keyframes animate
-{
-  0%
-  {
-    opacity: 0;
-    top:1000px;
-  }
-  50%
-  {
-    opacity: 1;
-    background:url('photos/DSC_0375.JPG');
-    background-position: center;
-    background-attachment: fixed;
-   
-  }
-  100%
-  {
-    opacity:1;
-    top:0px;
-    background:url('photos/DSC_0375.JPG');
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    
-  }
-}
-.dark{
-  color: rgba(132, 187, 142, 0.492);
-  font-size:7vw;
 
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: rgba(17, 224, 100, 0.74);
+  background-size: 50%, 50%;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-image: none;
+  position:sticky;
 }
-.image-text{
-  font-family:  'cursive';
-  font-weight: 1000;
-  color: rgba(38, 86, 47, 0.38);
-  position: absolute;
-  font-size:6vw;
-  left:10%;
-  top:30%
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
 }
-.active{
-  background-color: rgb(57, 188, 25);
+.carousel-control-prev-icon:after {
+  font-size: 55px;
+  content: '<';
+  color: red;
 }
+
+.carousel_header{
+  margin-left: 38% ;
+  margin-right: 30%;
+  
+}
+
+
+.img-pad{
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-right: 10;
+}
+@media (max-width: 768px ){
+  .container {
+    max-width: 950px;
+}
+}
+@media (min-width: 1200px){.container {
+  max-width: 1400px;
+  margin-left: 5px;
+}}@media (max-width: 992px){.container{
+  max-width: 1260px;
+  margin-left: 5px;
+}}
+@media (min-width: 1400px){
+  .container {
+    max-width: 1720px;
+    padding-top: 50px;
+    margin-left: 5px;
+}
+}
+
+
