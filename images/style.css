@@ -1,0 +1,87 @@
+
+
+a:hover{
+  background-color: rgba(31, 173, 212, 0.227);
+
+  font-size: 20px;
+  font-weight: 500;
+  
+  font-family: "Ubuntu";
+  color:bisque;
+}
+a{
+  font-family: "Ubuntu";
+  font-size:25px;
+ 
+}
+.w-100 {
+  width: 75% !important;
+  height: 100vh;
+}
+.carousel-item{
+  margin: 0% 5% 5%;
+  
+ 
+}
+
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: rgba(17, 224, 100, 0.74);
+  background-size: 50%, 50%;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-image: none;
+  position:sticky;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+.carousel-control-prev-icon:after {
+  font-size: 55px;
+  content: '<';
+  color: red;
+}
+
+.carousel_header{
+  margin-left: 38% ;
+  margin-right: 30%;
+  
+}
+
+
+.img-pad{
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-right: 10;
+}
+@media (max-width: 768px ){
+  .container {
+    max-width: 950px;
+}
+}
+@media (min-width: 1200px){.container {
+  max-width: 1400px;
+  margin-left: 5px;
+}}@media (max-width: 992px){.container{
+  max-width: 1260px;
+  margin-left: 5px;
+}}
+@media (min-width: 1400px){
+  .container {
+    max-width: 1720px;
+    padding-top: 50px;
+    margin-left: 5px;
+}
+}
+
+
